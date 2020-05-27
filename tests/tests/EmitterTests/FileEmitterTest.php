@@ -23,11 +23,12 @@
 use Snowplow\Tracker\Tracker;
 use Snowplow\Tracker\Emitters\FileEmitter;
 use Snowplow\Tracker\Subject;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Tests the functionality of the File emitter
  */
-class FileEmitterTest extends \PHPUnit_Framework_TestCase {
+class FileEmitterTest extends TestCase {
 
     // Helper Functions & Values
 
