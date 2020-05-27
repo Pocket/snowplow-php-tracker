@@ -46,7 +46,7 @@ class TrackerTest extends TestCase {
 
     // Helper Functions
 
-    protected function setUp() {
+    protected function setUp(): void {
         // Make multiple emitters
         $this->e1 = $this->getSyncEmitter("GET");
         $this->e2 = $this->getSyncEmitter("POST");

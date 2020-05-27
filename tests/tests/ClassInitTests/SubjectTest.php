@@ -34,7 +34,7 @@ class SubjectTest extends TestCase {
 
     // Helper Functions
 
-    protected function setUp() {
+    protected function setUp(): void {
         $this->subject = new Subject();
     }
 
