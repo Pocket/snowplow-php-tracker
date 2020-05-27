@@ -23,12 +23,11 @@
 use Snowplow\Tracker\Tracker;
 use Snowplow\Tracker\Emitters\SyncEmitter;
 use Snowplow\Tracker\Subject;
-use PHPUnit_Framework_TestCase;
 
 /**
  * Tests the functionality of the Synchronous emitter
  */
-class SyncEmitterTest extends PHPUnit_Framework_TestCase {
+class SyncEmitterTest extends \PHPUnit_Framework_TestCase {
 
     // Helper Functions & Values
 
