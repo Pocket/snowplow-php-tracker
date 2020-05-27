@@ -24,6 +24,7 @@ use Snowplow\Tracker\Tracker;
 use Snowplow\Tracker\Emitters\SyncEmitter;
 use Snowplow\Tracker\Subject;
 use PHPUnit\Framework\TestCase;
+use Symfony\Bridge\PhpUnit\SetUpTearDownTrait;
 
 /**
  * Tests the basic use-cases of the Tracker
@@ -46,7 +47,9 @@ class TrackerTest extends TestCase {
 
     // Helper Functions
 
-    protected function setUp(): void {
+    use SetUpTearDownTrait;
+
+    protected function doSetup() {
         // Make multiple emitters
         $this->e1 = $this->getSyncEmitter("GET");
         $this->e2 = $this->getSyncEmitter("POST");

@@ -22,6 +22,7 @@
 
 use Snowplow\Tracker\Subject;
 use PHPUnit\Framework\TestCase;
+use Symfony\Bridge\PhpUnit\SetUpTearDownTrait;
 
 /**
  * Tests all of the functions for adding information
@@ -34,7 +35,9 @@ class SubjectTest extends TestCase {
 
     // Helper Functions
 
-    protected function setUp(): void {
+    use SetUpTearDownTrait;
+
+    protected function doSetup() {
         $this->subject = new Subject();
     }
 
