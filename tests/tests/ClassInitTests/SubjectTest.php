@@ -21,20 +21,20 @@
 */
 
 use Snowplow\Tracker\Subject;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 
 /**
  * Tests all of the functions for adding information
  * into the Tracker Subject.
  */
-class SubjectTest extends TestCase {
+class SubjectTest extends PHPUnit_Framework_TestCase {
 
     /** @var Subject */
     private $subject;
 
     // Helper Functions
 
-    protected function setUp(): void {
+    protected function setUp() {
         $this->subject = new Subject();
     }
 

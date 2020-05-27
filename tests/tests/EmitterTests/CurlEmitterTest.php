@@ -23,12 +23,12 @@
 use Snowplow\Tracker\Tracker;
 use Snowplow\Tracker\Subject;
 use Snowplow\Tracker\Emitters\CurlEmitter;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 
 /**
  * Tests the functionality of the Curl emitter
  */
-class CurlEmitterTest extends TestCase {
+class CurlEmitterTest extends PHPUnit_Framework_TestCase {
 
     // Helper Functions & Values
 

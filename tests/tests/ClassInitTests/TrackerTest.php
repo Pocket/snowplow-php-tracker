@@ -23,7 +23,7 @@
 use Snowplow\Tracker\Tracker;
 use Snowplow\Tracker\Emitters\SyncEmitter;
 use Snowplow\Tracker\Subject;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 
 /**
  * Tests the basic use-cases of the Tracker
@@ -33,7 +33,7 @@ use PHPUnit\Framework\TestCase;
  * - Changing the Tracker's subject
  * - Changing Subject information from the Tracker
  */
-class TrackerTest extends TestCase {
+class TrackerTest extends PHPUnit_Framework_TestCase {
 
     /** @var SyncEmitter */
     private $e1;
@@ -46,7 +46,7 @@ class TrackerTest extends TestCase {
 
     // Helper Functions
 
-    protected function setUp(): void {
+    protected function setUp() {
         // Make multiple emitters
         $this->e1 = $this->getSyncEmitter("GET");
         $this->e2 = $this->getSyncEmitter("POST");

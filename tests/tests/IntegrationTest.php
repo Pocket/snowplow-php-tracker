@@ -25,7 +25,7 @@ use Snowplow\Tracker\Subject;
 use Snowplow\Tracker\Emitters\SocketEmitter;
 use Snowplow\Tracker\Emitters\SyncEmitter;
 use Snowplow\Tracker\Emitters\CurlEmitter;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 
 /**
  * This test asserts that for every type of event the tracker
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  * - Socket Emitter
  * - Curl Emitter
  */
-class IntegrationTest extends TestCase {
+class IntegrationTest extends PHPUnit_Framework_TestCase {
 
     // Helper Functions & Values
 

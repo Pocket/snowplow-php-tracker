@@ -23,12 +23,12 @@
 use Snowplow\Tracker\Tracker;
 use Snowplow\Tracker\Subject;
 use Snowplow\Tracker\Emitters\SocketEmitter;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 
 /**
  * Tests the functionality of the Socket emitter
  */
-class SocketEmitterTest extends TestCase {
+class SocketEmitterTest extends PHPUnit_Framework_TestCase {
 
     // Helper Functions & Values
 
