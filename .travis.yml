@@ -20,6 +20,7 @@ before_script:
 
 script:
   - "curl -X POST -d @tests/mountebank_mocks/imposter.json http://localhost:2525/imposters"
+  - export SYMFONY_PHPUNIT_VERSION=5.7
   - php vendor/bin/simple-phpunit
 
 after_script:
