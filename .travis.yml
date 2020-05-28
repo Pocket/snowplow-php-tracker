@@ -1,6 +1,7 @@
 language: php
 
 php:
+  - "5.6"
   - "7.2"
   - "7.3"
 
@@ -19,7 +20,8 @@ before_script:
 
 script:
   - "curl -X POST -d @tests/mountebank_mocks/imposter.json http://localhost:2525/imposters"
-  - php vendor/bin/phpunit
+  - export SYMFONY_PHPUNIT_VERSION=5.7
+  - php vendor/bin/simple-phpunit
 
 after_script:
   - php vendor/bin/php-coveralls -v
